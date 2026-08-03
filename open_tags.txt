@@ -1,0 +1,236 @@
+<View style={{ width: '100%', alignItems: 'center' }}>
+<View style={{ flexDirection: 'row', justifyContent: 'space-between', alignItems: 'flex-end', width }}>
+<View key={i} style={{ alignItems: 'center' }}>
+<View style={{ height, justifyContent: 'flex-end' }}>
+<View style={{ height: 34, alignItems: 'center' }}>
+<any>
+<string | null>
+<string | null>
+<any[]>
+<any[]>
+<any>
+<MapboxGL.Camera>
+<string>
+<string, number>
+<void>
+<View style={s.container}>
+<TouchableOpacity style={s.closeBtn} onPress={() =>
+<Ionicons name="close" size={20} color={colors.text} />
+<View style={[s.settingsBtn, { flexDirection: 'row', alignItems: 'center', gap: 16 }]}>
+<TouchableOpacity onPress={() =>
+<View>
+<Ionicons name="mail-outline" size={22} color={colors.text} />
+<View style={{ position: 'absolute', top: -4, right: -4, backgroundColor: colors.error, borderRadius: 10, width: 14, height: 14, justifyContent: 'center', alignItems: 'center' }}>
+<Text style={{ color: '#FFF', fontSize: 8, fontWeight: 'bold' }}>
+<TouchableOpacity onPress={() =>
+<Ionicons name="qr-code-outline" size={22} color={colors.text} />
+<TouchableOpacity onPress={() =>
+<Ionicons name="settings-outline" size={22} color={colors.text} />
+<ScrollView contentContainerStyle={s.scroll} showsVerticalScrollIndicator={false}>
+<Animated.View style={[s.heroSection, { opacity: Animated.multiply(fadeIn, pulseAnim), transform: [{ translateY: slideUp }] }]}>
+<View style={s.avatarWrapper}>
+<TouchableOpacity style={s.avatar} activeOpacity={0.85} onPress={isOwnProfile ? handlePickImage : undefined} disabled={!isOwnProfile || uploading}>
+<Image source={{ uri: avatarUri }} style={s.avatarImg} />
+<Text style={s.avatarInitials}>
+<View style={s.cameraBadge}>
+<Ionicons name="camera" size={11} color={colors.background} />
+<Text style={s.heroName}>
+<Text style={s.rankText}>
+<Text style={s.memberText}>
+<View style={{ flexDirection: 'row', gap: 24, marginTop: 12, marginBottom: 16 }}>
+<TouchableOpacity onPress={() =>
+<Text style={{ color: colors.text, fontSize: 14, fontWeight: '700' }}>
+<Text style={{ color: colors.textSecondary, fontWeight: '500' }}>
+<TouchableOpacity onPress={() =>
+<Text style={{ color: colors.text, fontSize: 14, fontWeight: '700' }}>
+<Text style={{ color: colors.textSecondary, fontWeight: '500' }}>
+<View style={{ flexDirection: 'row', gap: 12, marginBottom: 16, width: '100%' }}>
+<Text style={s.reactBtnText}>
+<View style={s.uploadRow}>
+<Button variant="primary" title="SAVE" onPress={confirmUpload} style={{ flex: 1 }} />
+<Button variant="ghost" title="CANCEL" onPress={() =>
+<Animated.View style={[s.section, { alignItems: 'center', marginTop: 40, opacity: fadeIn, transform: [{ translateY: slideUp }] }]}>
+<View style={{ width: 80, height: 80, borderRadius: 40, backgroundColor: colors.surface, justifyContent: 'center', alignItems: 'center', marginBottom: 16 }}>
+<Ionicons name="lock-closed" size={32} color={colors.textSecondary} />
+<Text style={{ color: colors.text, fontSize: 18, fontWeight: '700', marginBottom: 8 }}>
+<Text style={{ color: colors.textSecondary, fontSize: 14, textAlign: 'center' }}>
+<Animated.View style={[s.section, { opacity: fadeIn, transform: [{ translateY: slideUp }] }]}>
+<TouchableOpacity activeOpacity={isOwnProfile ? 0.7 : 1} onPress={() =>
+<View style={{ flexDirection: 'row', justifyContent: 'space-between', marginBottom: 10 }}>
+<Text style={s.goalLabel}>
+<Text style={s.goalValue}>
+<Text style={{ color: colors.textSecondary, fontWeight: '600' }}>
+<View style={s.goalTrack}>
+<Animated.View style={[s.section, { opacity: fadeIn, transform: [{ translateY: slideUp }] }]}>
+<View style={s.highlightRow}>
+<View style={s.highlightCard}>
+<Text style={s.highlightValue}>
+<Text style={s.highlightLabel}>
+<View style={s.highlightDivider} />
+<View style={s.highlightCard}>
+<Text style={s.highlightValue}>
+<Text style={s.highlightLabel}>
+<View style={s.highlightDivider} />
+<View style={s.highlightCard}>
+<Text style={s.highlightValue}>
+<Text style={s.highlightLabel}>
+<Animated.View style={[s.section, { opacity: fadeIn }]}>
+<View style={s.streakBanner}>
+<Text style={s.streakEmoji}>
+<View>
+<Text style={s.streakValue}>
+<Text style={s.streakSub}>
+<Animated.View style={[s.section, { opacity: fadeIn, transform: [{ translateY: slideUp }] }]}>
+<View style={s.tabContainer}>
+<TouchableOpacity style={s.tabBtn} onPress={() =>
+<Text style={[s.tabText, activeTab === 'PERFORMANCE' && s.tabTextActive]}>
+<View style={s.tabIndicator} />
+<TouchableOpacity style={s.tabBtn} onPress={() =>
+<Text style={[s.tabText, activeTab === 'ATHLETICS' && s.tabTextActive]}>
+<View style={s.tabIndicator} />
+<View style={s.metricsGrid}>
+<TouchableOpacity style={s.metricCard} onPress={() =>
+<Text style={s.metricValue}>
+<Text style={s.metricLabel}>
+<TouchableOpacity style={s.metricCard} onPress={() =>
+<Text style={s.metricValue}>
+<Text style={s.metricLabel}>
+<TouchableOpacity style={s.metricCard} onPress={() =>
+<Text style={s.metricValue}>
+<Text style={s.metricLabel}>
+<TouchableOpacity style={s.metricCard} onPress={() =>
+<Text style={s.metricValue}>
+<Text style={s.metricLabel}>
+<TouchableOpacity style={s.metricCard} onPress={() =>
+<Text style={s.metricValue}>
+<Text style={s.metricLabel}>
+<TouchableOpacity style={s.metricCard} onPress={() =>
+<Text style={s.metricValue}>
+<Text style={s.metricLabel}>
+<TouchableOpacity style={s.metricCard} onPress={() =>
+<Text style={s.metricValue}>
+<Text style={s.metricLabel}>
+<TouchableOpacity style={s.metricCard} onPress={() =>
+<Text style={s.metricValue}>
+<Text style={s.metricLabel}>
+<TouchableOpacity style={s.metricCard} onPress={() =>
+<Text style={s.metricValue}>
+<Text style={s.metricLabel}>
+<TouchableOpacity style={s.metricCard} onPress={() =>
+<Text style={s.metricValue}>
+<Text style={s.metricLabel}>
+<Animated.View style={[s.section, { opacity: fadeIn }]}>
+<Text style={s.sectionTitle}>
+<View style={s.chartCard}>
+<AudioVisualizerGraph data={chartData} />
+<Text style={{ color: colors.textSecondary, textAlign: 'center', marginVertical: 32, fontSize: 13 }}>
+<Animated.View style={[s.section, { opacity: fadeIn }]}>
+<TouchableOpacity style={s.routesCta} activeOpacity={0.85} onPress={handleOpenMap}>
+<View style={s.routesCtaLeft}>
+<View style={s.routesIconCircle}>
+<Ionicons name="map-outline" size={18} color={colors.background} />
+<View>
+<Text style={s.routesCtaTitle}>
+<Text style={s.routesCtaSub}>
+<Ionicons name="chevron-forward" size={18} color={colors.textSecondary} />
+<View style={s.section}>
+<Button variant="ghost" title="SIGN OUT" onPress={handleLogout} style={{ width: '100%' }} />
+<Modal visible={mapVisible} animationType="slide" presentationStyle="pageSheet" onRequestClose={() =>
+<View style={s.mapModal}>
+<View style={s.mapHeader}>
+<View>
+<Text style={s.mapTitle}>
+<Text style={s.mapSubtitle}>
+<TouchableOpacity style={s.mapCloseBtn} onPress={() =>
+<Ionicons name="close" size={20} color={colors.text} />
+<View style={s.mapLoading}>
+<ActivityIndicator size="large" color={colors.brand} />
+<Text style={s.mapLoadingText}>
+<MapboxGL.ShapeSource id="routes" shape={routesGeoJSON}>
+<View style={s.mapMarker}>
+<View style={s.mapMarkerInner} />
+<Modal visible={goalModalVisible} animationType="slide" transparent>
+<View style={s.modalOverlay}>
+<View style={s.modalBox}>
+<View style={s.modalHeader}>
+<Ionicons name="flag" size={20} color={colors.brand} />
+<Text style={s.modalTitle}>
+<View style={{ flex: 1 }} />
+<TouchableOpacity onPress={() =>
+<Ionicons name="close" size={22} color={colors.textSecondary} />
+<Text style={s.modalText}>
+<View style={{ marginVertical: 20, width: '100%', alignItems: 'center' }}>
+<Button title="SAVE GOAL" variant="primary" onPress={() =>
+<OutrunModal visible={!!activeMetricModal} onClose={() =>
+<ScrollView contentContainerStyle={{ padding: 24, paddingBottom: 40 }}>
+<ScrollView>
+<View style={s.modalHeader}>
+<Ionicons name={icon as any} size={20} color={iconColor} />
+<Text style={[s.modalTitle, { color: iconColor }]}>
+<Text style={s.modalText}>
+<View style={s.mathContainer}>
+<Text style={s.mathSectionTitle}>
+<View style={s.miniChartRow}>
+<View key={i} style={s.miniChartCol}>
+<Text style={s.miniChartVal}>
+<View style={[s.miniChartBar, { height, backgroundColor: val >
+<Text style={s.miniChartDay}>
+<View style={s.mathContainer}>
+<Text style={s.mathSectionTitle}>
+<Text style={s.mathEquation}>
+<Text style={s.mathEquationSub}>
+<View style={s.mathContainer}>
+<Text style={s.mathSectionTitle}>
+<Text style={s.mathEquation}>
+<Text style={s.mathEquationSub}>
+<View style={s.mathContainer}>
+<Text style={s.mathSectionTitle}>
+<Text style={s.mathEquation}>
+<Text style={s.mathEquationSub}>
+<View style={s.mathContainer}>
+<Text style={s.mathSectionTitle}>
+<View style={{ flexDirection: 'row', justifyContent: 'space-between', marginTop: 12 }}>
+<Text style={{ color: '#00C7BE', fontSize: 10, fontWeight: '800' }}>
+<Text style={{ color: '#34C759', fontSize: 10, fontWeight: '800', textAlign: 'center' }}>
+<Text style={{ color: '#FF3B30', fontSize: 10, fontWeight: '800', textAlign: 'right' }}>
+<View style={{ height: 6, backgroundColor: colors.border, borderRadius: 3, marginTop: 8, flexDirection: 'row', overflow: 'hidden' }}>
+<View style={{ flex: 0.8, backgroundColor: '#00C7BE' }} />
+<View style={{ flex: 0.5, backgroundColor: '#34C759' }} />
+<View style={{ flex: 0.7, backgroundColor: '#FF3B30' }} />
+<View style={s.mathContainer}>
+<Text style={s.mathSectionTitle}>
+<View style={s.miniChartRow}>
+<View key={i} style={s.miniChartCol}>
+<Text style={s.miniChartVal}>
+<View style={[s.miniChartBar, { height, backgroundColor: val >
+<Text style={s.miniChartDay}>
+<View style={s.mathContainer}>
+<Text style={s.mathSectionTitle}>
+<Text style={s.mathEquation}>
+<Text style={s.mathEquationSub}>
+<View style={s.mathContainer}>
+<Text style={s.mathSectionTitle}>
+<Text style={s.mathEquation}>
+<Text style={s.mathEquationSub}>
+<View style={s.mathContainer}>
+<Text style={s.mathSectionTitle}>
+<Text style={s.mathEquation}>
+<Text style={s.mathEquationSub}>
+<View style={s.mathContainer}>
+<Text style={s.mathSectionTitle}>
+<View style={{ flexDirection: 'row', justifyContent: 'space-between', marginTop: 12 }}>
+<Text style={{ color: '#00C7BE', fontSize: 10, fontWeight: '800' }}>
+<Text style={{ color: '#34C759', fontSize: 10, fontWeight: '800', textAlign: 'center' }}>
+<Text style={{ color: '#FF3B30', fontSize: 10, fontWeight: '800', textAlign: 'right' }}>
+<View style={{ height: 6, backgroundColor: colors.border, borderRadius: 3, marginTop: 8, flexDirection: 'row', overflow: 'hidden' }}>
+<View style={{ flex: 0.8, backgroundColor: '#00C7BE' }} />
+<View style={{ flex: 0.5, backgroundColor: '#34C759' }} />
+<View style={{ flex: 0.7, backgroundColor: '#FF3B30' }} />
+<TouchableOpacity style={s.modalConfirmBtn} onPress={() =>
+<Text style={s.modalConfirmText}>
+<View style={{ padding: 20, alignItems: 'center' }}>
+<Ionicons name="lock-closed" size={40} color={colors.textSecondary} />
+<Text style={{ color: colors.text, fontSize: 16, fontWeight: '600', marginTop: 12 }}>
+<Text style={{ color: colors.textSecondary, textAlign: 'center', marginTop: 8 }}>
+<TouchableOpacity style={s.modalConfirmBtn} onPress={() =>
+<Text style={s.modalConfirmText}>
