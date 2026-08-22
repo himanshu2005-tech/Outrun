@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import { View, Text, StyleSheet, Modal, TextInput, TouchableOpacity, ActivityIndicator, KeyboardAvoidingView, Platform, Keyboard, ScrollView, Image } from 'react-native';
+import { View, Text, StyleSheet, Modal, TextInput, TouchableOpacity, KeyboardAvoidingView, Platform, Keyboard, ScrollView, Image } from 'react-native';
 import { getFirestore, doc, updateDoc } from '@react-native-firebase/firestore';
 import Ionicons from 'react-native-vector-icons/Ionicons';
 import { launchImageLibrary } from 'react-native-image-picker';
@@ -8,6 +8,8 @@ import { useTheme } from '../theme/ThemeContext';
 import Button from './Button';
 import { showAlert } from './CustomAlert';
 import { OutrunModal } from './OutrunModal';
+import OutrunLoader from './OutrunLoader';
+import { GOOGLE_API_KEY } from '../config';
 
 interface ClubSettingsModalProps {
   visible: boolean;
@@ -61,7 +63,6 @@ const ClubSettingsModal: React.FC<ClubSettingsModalProps> = ({ visible, club, on
     setSearchTimeout(setTimeout(async () => {
       setSearchingMap(true);
       try {
-        const GOOGLE_API_KEY = "AIzaSyDV3ztCEb7GI0Tqzv0NUGC-ZeOeUV9kLME";
         const res = await fetch(`https://maps.googleapis.com/maps/api/place/autocomplete/json?input=${encodeURIComponent(text)}&types=(cities)&key=${GOOGLE_API_KEY}`);
         const data = await res.json();
         if (data.predictions) {
@@ -188,7 +189,7 @@ const ClubSettingsModal: React.FC<ClubSettingsModalProps> = ({ visible, club, on
                   value={city}
                   onChangeText={handleCityChange}
                 />
-                {searchingMap && <ActivityIndicator size="small" color={colors.brand} style={s.searchSpinner} />}
+                {searchingMap && <OutrunLoader size="small" label={false} style={s.searchSpinner} />}
               </View>
 
               {searchResults.length > 0 && (
@@ -209,7 +210,7 @@ const ClubSettingsModal: React.FC<ClubSettingsModalProps> = ({ visible, club, on
 
           <View style={{ marginTop: 32, marginBottom: 40 }}>
             {loading ? (
-              <ActivityIndicator size="large" color={colors.brand} />
+              <OutrunLoader size="large" label="SAVING CHANGES" />
             ) : (
               <Button title="SAVE CHANGES" onPress={handleSave} />
             )}

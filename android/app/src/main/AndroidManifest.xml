@@ -14,6 +14,11 @@
     <uses-permission android:name="android.permission.POST_NOTIFICATIONS" />
     <uses-permission android:name="android.permission.VIBRATE" />
     
+    <!-- Exact Alarms for Notifee Triggers -->
+    <uses-permission android:name="android.permission.SCHEDULE_EXACT_ALARM" />
+    <uses-permission android:name="android.permission.USE_EXACT_ALARM" />
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+    
     <!-- Camera & Storage for QR Code Scanning and Generation -->
     <uses-permission android:name="android.permission.CAMERA" />
     <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
@@ -31,15 +36,14 @@
       android:usesCleartextTraffic="${usesCleartextTraffic}"
       android:supportsRtl="true">
       
-      <!-- Voximplant Foreground Service Declaration -->
-      <service android:name="com.voximplant.foregroundservice.VIForegroundService"
-               android:exported="false"
+      <!-- Notifee Foreground Service Declaration -->
+      <service android:name="app.notifee.core.ForegroundService"
                android:foregroundServiceType="location" />
       
       <!-- Google Maps API Key -->
       <meta-data
           android:name="com.google.android.geo.API_KEY"
-          android:value="YOUR_GOOGLE_MAPS_API_KEY" />
+          android:value="@string/google_maps_key" />
       <activity
         android:name=".MainActivity"
         android:label="@string/app_name"
