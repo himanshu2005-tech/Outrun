@@ -2,7 +2,7 @@
   <h1>O U T R U N</h1>
   <p><strong>A sleek, high-performance, open-source social run tracker.</strong></p>
   <p>
-    <a href="https://github.com/himanshu2005-tech/Outrun/releases/download/v1.0.0/app-release.apk">
+    <a href="https://drive.google.com/file/d/16tuRtVSd9S8sCel3rRNcbAqBIfR3L-w9/view?usp=sharing">
       <img src="https://img.shields.io/badge/Download-APK-FF6B1A?style=for-the-badge&logo=android" alt="Download APK" />
     </a>
   </p>
