@@ -1,9 +1,8 @@
 <div align="center">
-  <img src="./images/Screenshot_1787378806.png" width="150" alt="Outrun Logo"/>
   <h1>O U T R U N</h1>
   <p><strong>A sleek, high-performance, open-source social run tracker.</strong></p>
   <p>
-    <a href="./app-release.apk">
+    <a href="https://github.com/himanshu2005-tech/Outrun/releases/download/v1.0.0/app-release.apk">
       <img src="https://img.shields.io/badge/Download-APK-FF6B1A?style=for-the-badge&logo=android" alt="Download APK" />
     </a>
   </p>
@@ -12,13 +11,6 @@
 ---
 
 Outrun is a next-generation running application built for athletes who want more than just a basic map. With a sleek dark-mode-first aesthetic, real-time global radar, ghost runner pacing, and powerful club analytics, Outrun is built to push your limits.
-
-<div align="center">
-  <img src="./images/Screenshot_1787378758.png" width="24%" />
-  <img src="./images/Screenshot_1787378781.png" width="24%" />
-  <img src="./images/Screenshot_1787378855.png" width="24%" />
-  <img src="./images/Screenshot_1787378954.png" width="24%" />
-</div>
 
 ## 🔥 Key Features
 
@@ -29,9 +21,21 @@ Outrun is a next-generation running application built for athletes who want more
 - **Advanced GPS Filtering**: Custom filtering algorithms for highly accurate distance and pace tracking.
 - **Social Feed & Cheering**: Live cheer your friends while they are active on the radar.
 
+---
+
+## 📸 Gallery
+
 <div align="center">
-  <img src="./images/Screenshot_1787378865.png" width="45%" />
-  <img src="./images/Screenshot_1787378084.png" width="45%" />
+  <img src="./images/login.png" width="24%" alt="Login" />
+  <img src="./images/run_record.png" width="24%" alt="Run Recording" />
+  <img src="./images/run_analysis.png" width="24%" alt="Run Analysis" />
+  <img src="./images/club_screen.png" width="24%" alt="Clubs" />
+</div>
+<br/>
+<div align="center">
+  <img src="./images/profile.png" width="24%" alt="Profile" />
+  <img src="./images/feed.png" width="24%" alt="Social Feed" />
+  <img src="./images/settings.png" width="24%" alt="Settings" />
 </div>
 
 ---
@@ -45,7 +49,7 @@ Outrun is a next-generation running application built for athletes who want more
 | **Auth & DB** | Firebase (Auth, Firestore, Storage) |
 | **Local Storage** | SQLite (Offline First) |
 | **Location** | `react-native-geolocation-service` + Android Foreground Service |
-| **Animations** | React Native Reanimated & Custom Animated API |
+| **Animations** | Custom Animated API |
 
 ---
 
@@ -84,8 +88,4 @@ Next, create an `android/app/src/main/res/values/secrets.xml` file for Android M
 npx react-native run-android
 ```
 
----
 
-<p align="center">
-  Built with ⚡ by Himanshu and Madhumita
-</p>
